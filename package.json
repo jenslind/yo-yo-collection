@@ -1,0 +1,26 @@
+{
+  "name": "yo-yo-collection",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenslind/yo-yo-collection.git"
+  },
+  "keywords": [
+    "yo-yo"
+  ],
+  "author": "Jens Lind <jens@jensl.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenslind/yo-yo-collection/issues"
+  },
+  "homepage": "https://github.com/jenslind/yo-yo-collection#readme",
+  "dependencies": {
+    "nanobus": "^3.2.1",
+    "yo-yo": "^1.4.0"
+  }
+}
