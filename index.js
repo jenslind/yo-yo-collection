@@ -10,7 +10,7 @@ Collection.prototype.component = function (c, update, options) {
   if (!options) options = {}
 
   let el = c(this.state, this.bus)
-  if (options.mount !== false) document.body.appendChild(el)
+  if (options.mount) document.body.appendChild(el)
 
   this.bus.on('rerender', () => {
     if (typeof update === 'function') {
