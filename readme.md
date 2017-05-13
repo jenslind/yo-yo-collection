@@ -10,7 +10,7 @@ npm install yo-yo-collection
 Needed a way to handle state and update of multiple small `yo-yo` components. Inspired by [choo](https://github.com/yoshuawuyts/choo).
 
 ## Example
-```
+```javascript
 const collection = new Collection()
 
 // Add a component to the collection
