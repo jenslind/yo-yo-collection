@@ -6,18 +6,14 @@ const Collection = function (state) {
   this.bus = nanobus()
 }
 
-Collection.prototype.component = function (c, update, options) {
+Collection.prototype.component = function (c, options) {
   if (!options) options = {}
 
   let el = c(this.state, this.bus)
   if (options.mount) document.querySelector(options.mount).appendChild(el)
 
   this.bus.on('rerender', () => {
-    if (typeof update === 'function') {
-      update(this.state, this.bus)
-    } else {
-      yo.update(el, c(this.state, this.bus), options)
-    }
+    yo.update(el, c(this.state, this.bus), options)
   })
 }
 
