@@ -1,6 +1,6 @@
 {
   "name": "yo-yo-collection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keep a collection of yo-yo components and handle state",
   "main": "index.js",
   "scripts": {
